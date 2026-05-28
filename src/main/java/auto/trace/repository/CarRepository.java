@@ -12,4 +12,8 @@ public interface CarRepository extends JpaRepository<Car, Long> {
     List<Car> findByUserId(Long userId);
 
     List<Car> findByIdIn(List<Long> carIds);
+
+    boolean existsByUserId(Long userId);
+
+    void deleteByUserId(Long userId);
 }

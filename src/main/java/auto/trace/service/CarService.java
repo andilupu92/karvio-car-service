@@ -180,4 +180,10 @@ public class CarService {
                 .setScale(2, RoundingMode.HALF_UP);
     }
 
+    @Transactional
+    public void deleteAllCarsByUser(Long userId) {
+        if (carRepository.existsByUserId(userId)) {
+            carRepository.deleteByUserId(userId);
+        }
+    }
 }

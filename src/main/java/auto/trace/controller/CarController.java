@@ -61,4 +61,10 @@ public class CarController {
         carService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @DeleteMapping("/byUser/{userId}")
+    public ResponseEntity<Void> deleteAllCarsByUser(@PathVariable Long userId) {
+        carService.deleteAllCarsByUser(userId);
+        return ResponseEntity.noContent().build();
+    }
 }
