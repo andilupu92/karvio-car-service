@@ -1,4 +1,4 @@
-name: auto-car-service CI Pipeline
+name: karvio-car-service CI Pipeline
 
 on:
   push:

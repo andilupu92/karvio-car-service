@@ -1,9 +1,9 @@
 server:
-  port: 8083
+  port: ${SERVER_PORT}
 
 spring:
   application:
-    name: auto-car-service
+    name: karvio-car-service
 
 # Actuator endpoints
 management:
@@ -25,6 +25,6 @@ management:
 logging:
   level:
     root: INFO
-    auto.trace: DEBUG
+    karvio: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
