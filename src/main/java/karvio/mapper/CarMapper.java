@@ -21,7 +21,7 @@ public interface CarMapper {
     Car toEntity(CarRequest carRequest);
 
     default Integer calculateHealthScore(Integer financialHealth, Integer mechanicalHealth) {
-        if (financialHealth == null && mechanicalHealth == null) {
+        if (financialHealth == null || mechanicalHealth == null) {
             return null;
         }
 
