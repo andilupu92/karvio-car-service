@@ -123,7 +123,7 @@ public class CarService {
 
         BigDecimal monthlyAverage = documentServiceClient.getMonthlyAverage(fuelRequest.carId(),
                 new ExpenseRequest(fuelRequest.carId(),
-                        2L, // is expenseTypeId for fuel -> I will change in the future
+                        1L, // is expenseTypeId for fuel -> I will change in the future
                         fuelRequest.amount(),
                         fuelRequest.date()));
 
